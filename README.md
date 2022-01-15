@@ -1,4 +1,4 @@
-# 【DartSass】CodeUps課題用Gulp環境
+# 【DartSass】Gulp環境
 # FLOCSS設計（スマホファースト）
 
 ## 環境
