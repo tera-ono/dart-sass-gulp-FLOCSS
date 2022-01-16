@@ -1,0 +1,8 @@
+@use "global" as *;
+.c-header-logo {
+  width: 300px;
+  fill: $accent;
+  @include mq("md") {
+    fill: $navy;
+  }
+}

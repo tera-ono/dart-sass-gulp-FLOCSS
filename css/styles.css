@@ -176,6 +176,31 @@ select::-ms-expand {
   }
 }
 
+.c-footer-logo {
+  width: 150px;
+  fill: #3e5b9c;
+}
+@media screen and (min-width: 768px) {
+  .c-footer-logo {
+    fill: red;
+    width: 400px;
+  }
+}
+
+.c-header-logo {
+  width: 300px;
+  fill: #b8614b;
+}
+@media screen and (min-width: 768px) {
+  .c-header-logo {
+    fill: #182848;
+  }
+}
+
+.c-logo-svg {
+  display: none;
+}
+
 /* --- タブレットサイズでブロックになり改行する --- */
 .u-block-tab {
   display: inline;
