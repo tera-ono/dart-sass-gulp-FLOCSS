@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "";
+  font-family: "lato", sans-serif;
 }
 
 /* リキッドレイアウト対応 */
@@ -14,10 +14,10 @@ html {
 }
 @media screen and (min-width: 768px) {
   html {
-    font-size: 1.4545454545vw;
+    font-size: 1.5763546798vw;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1015px) {
   html {
     font-size: 16px;
   }
@@ -170,47 +170,10 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .l-inner {
-    max-width: 1150px;
-    padding-right: 25px;
-    padding-left: 25px;
+    max-width: 1095px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
-}
-
-.c-btn {
-  display: inline-block;
-  padding: 15px 30px;
-  padding: 0.9375rem 1.875rem;
-  color: #111;
-  background-color: red;
-  font-size: 30px;
-  font-size: 1.875rem;
-}
-@media screen and (min-width: 768px) {
-  .c-btn {
-    display: block;
-    color: #fff;
-    background-color: blue;
-    font-size: 3.125rem;
-    border-radius: 1.25rem;
-    text-align: center;
-  }
-}
-
-.test {
-  font-size: 100px;
-  font-size: 6.25rem;
-  background-color: #111;
-  color: #fff;
-}
-
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.menu li {
-  margin-left: 20px;
-  margin-left: 1.25rem;
 }
 
 /* --- タブレットサイズでブロックになり改行する --- */

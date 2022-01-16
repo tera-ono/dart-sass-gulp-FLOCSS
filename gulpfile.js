@@ -119,7 +119,8 @@ const delPath = {
 }
 
 const clean = (done) => {
-    del(delPath.img, { force: true, });
+    del(delPath.img, { force: true, }); //カレントディレクトリ(同じ階層)以上を対象にするならtrue
+    
     // del(delPath.css, { force: true, });
     // del(delPath.js, { force: true, });
     // del(delPath.jsMin, { force: true, });
