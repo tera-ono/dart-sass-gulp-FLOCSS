@@ -1,9 +1,9 @@
 @use "global" as *;
+
 .c-footer-logo {
-  width: 150px;
-  fill: $main;
+  width: rem(159);
+  fill: $white;
   @include mq("md") {
-    fill: red;
-    width: 400px;
+    width: rem(271);
   }
 }

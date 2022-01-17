@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.c-mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.c-mobile-menu span {
+  display: block;
+  width: rem(20);
+  height: rem(2);
+  background-color: $white;
+  transition: $transition-duration linear;
+}
+
+.c-mobile-menu span:first-of-type {
+  margin-bottom: rem(5);
+}
+.c-mobile-menu span:last-of-type {
+  margin-top: rem(5);
+}
+
+
+/* --- ハンバガーメニュークリック後の付与される.is-open がついた時の挙動 --- */
+.c-mobile-menu.is-open span {
+  display: block;
+  width: rem(25);
+  height: rem(2);
+  background-color: $white;
+  transition: $transition-duration linear;
+}
+
+.c-mobile-menu.is-open span:first-of-type {
+  margin-bottom: rem(-2);
+  transform: rotate(135deg);
+}
+.c-mobile-menu.is-open span:nth-of-type(2) {
+  opacity: 0;
+}
+.c-mobile-menu.is-open span:last-of-type {
+  margin-top: rem(-2);
+  transform: rotate(-135deg);
+}

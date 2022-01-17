@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.p-header {
+  background-color: $main;
+  height: rem(57);
+  @include mq("md") {
+    height: rem(80);
+  }
+}
+.p-header__logo {
+  margin-right: rem(20);
+}
+
+.p-header__inner {
+  display: flex;
+  align-items: center;
+  max-width: rem(540); //状況によって変える必要があるかも
+  width: 100%;
+  height: inherit;
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq("md") {
+    max-width: rem(1446);
+    padding-right: rem(40);
+    padding-left: rem(40);
+  }
+}
+
+.p-header__nav {
+  display: none;
+  height: inherit;
+  @include mq("md") {
+    display: block;
+  }
+}
+
+.p-header__mobile-menu {
+  height: inherit;
+  margin-left: auto;
+  @include mq("md") {
+    display: none;
+  }
+}

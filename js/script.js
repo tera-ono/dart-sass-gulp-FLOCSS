@@ -1,5 +1,9 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
+  $('.js-mobile-menu').on('click', function() {
+    $(this).toggleClass('is-open');
+  });
+
 
   var topBtn = $('.pagetop');
   topBtn.hide();

@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.p-header-nav__items {
+  display: flex;
+  align-items: center ;
+  height: inherit;
+}
+
+.p-header-nav__item {
+  position: relative;
+  text-align: center;
+  height: inherit;
+  margin-right: rem(20);
+}
+
+.p-header-nav__item:not(:first-of-type) {
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: rem(-10);
+    display: inline-block;
+    content: "";
+    width: rem(1);
+    height: rem(30);
+    background-color: $white;
+    transform: translateY(-50%) rotate(-140deg);
+  }
+}
+
+
+.p-header-nav__item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: inherit;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1;
+  color: $white;
+  padding-left: rem(10);
+  padding-right: rem(10);
+}
+
+.p-header-nav__item span {
+  display: block;
+  margin-top: rem(6);
+  font-size: rem(10);
+  font-weight: $regular;
+  line-height: 1;
+  color: $white;
+}

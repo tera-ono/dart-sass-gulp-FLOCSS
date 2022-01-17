@@ -31,10 +31,9 @@ a[href^="tel:"] {
 a {
   text-decoration: none;
   color: inherit;
-  transition: opacity 0.3s;
-  @include mq("md") {
-    &:hover {
-      opacity: 0.8;
-    }
+  transition: opacity $transition-duration linear;
+  &:hover, &:focus {
+    opacity: $opacity;
+    transition: opacity $transition-duration linear;
   }
 }

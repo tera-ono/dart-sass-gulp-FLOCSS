@@ -17,7 +17,7 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-$base-font-family: "lato", sans-serif;
+$base-font-family: "lato","Noto Sans JP", sans-serif;
 $second-font-family: "Noto Sans JP", sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
 
@@ -42,6 +42,16 @@ $white: #ffffff;
 $gray: #f0f0f0;
 $navy: #182848;
 $accent: #b8614b;
+
+////////////////////
+// opacity
+////////////////////
+$opacity: 0.7;
+
+////////////////////
+// transition-duration
+////////////////////
+$transition-duration: 0.3s;
 
 
 ////////////////////
