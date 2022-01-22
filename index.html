@@ -34,11 +34,12 @@
       rel="stylesheet"
     />
     <!-- swiper.js CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.css"
+    />
     <!-- css -->
     <link rel="stylesheet" href="./css/styles.css" />
-    
-    
   </head>
 
   <body>
@@ -179,12 +180,113 @@
       </div>
     </header>
 
+    <div class="l-drawer p-drawer">
+      <div class="p-drawer__inner l-inner">
+        <a href="#" class="p-drawer__item">トップ
+          <span>TOP</span>
+        </a>
+      </div>
+    </div>
+
+    <main>
+      <section class="l-top-mv p-top-mv">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/sp/mv-sp1.png"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/pc/mv-pc1.png"
+                />
+                <img src="./images/pc/mv-pc1.png" alt="" />
+              </picture>
+            </div>
+
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/sp/mv-sp2.png"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/pc/mv-pc2.png"
+                />
+                <img src="./images/pc/mv-pc2.png" alt="" />
+              </picture>
+            </div>
+
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/sp/mv-sp3.png"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/pc/mv-pc3.png"
+                />
+                <img src="./images/pc/mv-pc3.png" alt="" />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-top-mv__text">
+          <div class="p-top-mv__inner l-inner">
+            <h2 class="p-top-mv__title">
+              CHALLENGE
+              <span class="u-inline-tab">FROM </span>THE BOTTOM
+            </h2>
+
+            <div class="p-top-mv__sub-title">
+              <div class="p-top-mv__sub-text"><h3>社会の基礎を支え</h3></div>
+              <br />
+              <div class="p-top-mv__sub-text">
+                <h3>基礎から世界を変革する会社</h3>
+              </div>
+            </div>
+
+            <div class="p-top-mv__news p-mv-news">
+              
+              <a href="#" class="p-mv-news__item c-news">
+                <span class="c-news__heading">NEWS</span>
+                <div class="c-news__meta">
+                  <time class="c-news__time" datetime="2021-06-12"
+                    >2021.06.12
+                  </time>
+                  <span class="c-news__category c-tag"> お知らせ </span>
+                  <p class="c-news__title">
+                    新サイトを公開しました。
+                  </p>
+                </div>
+                <div class="c-news__icon c-arrow">
+                  <img src="./images/common/arrow.png" alt="矢印アイコン">
+                </div>
+              </a>
+            </div>
+
+          </div><!-- p-top-mv__inner l-inner-->
+        </div>
+
+      </section>
+    </main>
+
     <svg viewBox="0 0 272 60" class="c-footer-logo">
       <use xlink:href="#logo"></use>
     </svg>
 
     <!-- swiper.js CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
+    <!-- スライダー -->
+    <script src="./js/mv-slider.js"></script>
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="./js/script.js"></script>

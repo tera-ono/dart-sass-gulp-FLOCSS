@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .p-header {
-  background-color: $main;
+  background: linear-gradient(90deg, rgb(75, 108, 183) , rgb(24, 40, 72) );
   height: rem(57);
   @include mq("md") {
     height: rem(80);
@@ -14,7 +14,6 @@
 .p-header__inner {
   display: flex;
   align-items: center;
-  max-width: rem(540); //状況によって変える必要があるかも
   width: 100%;
   height: inherit;
   padding-right: $padding-sp;
@@ -22,7 +21,6 @@
   margin-right: auto;
   margin-left: auto;
   @include mq("md") {
-    max-width: rem(1446);
     padding-right: rem(40);
     padding-left: rem(40);
   }

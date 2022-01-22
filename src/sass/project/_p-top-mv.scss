@@ -1,0 +1,117 @@
+@use "global" as *;
+
+.p-top-mv {
+  position: relative;
+  height: rem(611);
+  background: linear-gradient(90deg, rgb(75, 108, 183), rgb(24, 40, 72));
+  /* ---子要素のテキストより下層にしたいので0にする  --- */
+  z-index: 0;
+  @include mq("md") {
+    height: rem(688);
+  }
+}
+
+/* --- mvスライダー --- */
+.swiper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: rem(375);
+  width: 100%;
+  /* --- 同階層のテキストよりも下層にしたいので-1にする(positionを使っている為浮いているのでマイナスにする) --- */
+  z-index: -1;
+  @include mq("md") {
+    max-width: rem(1366);
+  }
+}
+
+.swiper-slide img {
+  max-width: none;
+  width: auto;
+  height: rem(611);
+  @include mq("md") {
+    height: rem(688);
+  }
+  object-fit: cover;
+}
+/* --- --------------- --- */
+
+
+/* --- mvテキスト --- */
+.p-top-mv__text {
+  padding-top: rem(107);
+  z-index: 2;
+  @include mq("md") {
+    padding-top: rem(110);
+  }
+}
+
+.p-top-mv__title {
+  font-size: rem(48);
+  font-weight: $ex-bold;
+  line-height: 1.208;
+  letter-spacing: 0.02em;
+  color: $white;
+  text-shadow: 3px 6px 4px rgba(24, 40, 72, 0.5);
+  @include mq("md") {
+    font-size: rem(96);
+    line-height: 1.1666;
+  }
+}
+
+.p-top-mv__sub-title {
+  font-size: rem(17);
+  font-weight: $bold;
+  line-height: 1;
+  color: $navy;
+  margin-top: rem(12.8);
+  @include mq("md") {
+    font-size: rem(32);
+    margin-top: rem(42);
+  }
+}
+
+.p-top-mv__sub-text {
+  position: relative;
+  display: inline-block;
+  background-color: $white;
+  box-shadow: 4px 3px $navy;
+  /* --- 枠を平行四辺形 --- */
+  transform: skewX(-27deg);
+  // z-index: -1;
+  @include mq("sm") {
+    margin-left: rem(10);
+  }
+
+  @include mq("md") {
+    box-shadow: 8px 6px $navy;
+  }
+  
+}
+
+.p-top-mv__sub-text:not(:first-of-type) {
+  margin-top: rem(14);
+  @include mq("md") {
+    margin-top: rem(16);
+  }
+}
+
+.p-top-mv__sub-text h3 {
+  display: inline-block;
+  padding: rem(9);
+  /* ---テキストを枠と逆に傾けることで相殺し普通の角度にしている    --- */
+  transform: skewX(27deg);
+  @include mq("md") {
+    padding: rem(5.6) rem(30);
+  }
+}
+
+.p-top-mv__news {
+  margin-top: rem(65);
+  @include mq("sm") {
+    margin-top: rem(134);
+  }
+  @include mq("md") {
+    margin-top: rem(110);
+  }
+}
