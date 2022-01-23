@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.c-section-heading {
+  font-size: rem(24);
+  font-weight: $medium;
+  line-height: 1.3333;
+  color: $black;
+  @include mq("md") {
+    font-size: rem(32);
+  }
+}

@@ -143,7 +143,7 @@
 
     <header class="p-header">
       <div class="p-header__inner">
-        <h1>
+        <h1 class="p-header__logo-wrapper">
           <a href="#">
             <svg viewBox="0 0 272 60" class="p-header__logo c-header-logo">
               <use xlink:href="#logo"></use>
@@ -180,10 +180,31 @@
       </div>
     </header>
 
-    <div class="l-drawer p-drawer">
-      <div class="p-drawer__inner l-inner">
-        <a href="#" class="p-drawer__item">トップ
+    <div class="l-drawer p-drawer js-drawer">
+      <div class="p-drawer__inner">
+        <a href="#" class="p-drawer__item"
+          >トップ
           <span>TOP</span>
+        </a>
+        <a href="#" class="p-drawer__item"
+          >事業内容
+          <span>SERVICES</span>
+        </a>
+        <a href="#" class="p-drawer__item"
+          >園崎組について
+          <span>ABOUT</span>
+        </a>
+        <a href="#" class="p-drawer__item"
+          >園崎組の実績
+          <span>WORKS</span>
+        </a>
+        <a href="#" class="p-drawer__item"
+          >採用情報
+          <span>RECRUIT</span>
+        </a>
+        <a href="#" class="p-drawer__item"
+          >お問い合わせ
+          <span>CONTACT</span>
         </a>
       </div>
     </div>
@@ -255,7 +276,6 @@
             </div>
 
             <div class="p-top-mv__news p-mv-news">
-              
               <a href="#" class="p-mv-news__item c-news">
                 <span class="c-news__heading">NEWS</span>
                 <div class="c-news__meta">
@@ -263,20 +283,90 @@
                     >2021.06.12
                   </time>
                   <span class="c-news__category c-tag"> お知らせ </span>
-                  <p class="c-news__title">
-                    新サイトを公開しました。
-                  </p>
+                  <p class="c-news__title">新サイトを公開しました。</p>
                 </div>
                 <div class="c-news__icon c-arrow">
-                  <img src="./images/common/arrow.png" alt="矢印アイコン">
+                  <img src="./images/common/arrow.png" alt="矢印アイコン" />
                 </div>
               </a>
             </div>
-
-          </div><!-- p-top-mv__inner l-inner-->
+          </div>
+          <!-- p-top-mv__inner l-inner-->
         </div>
-
       </section>
+      <!-- l-top-mv p-top-mv-->
+
+      <section class="l-services p-services">
+        <div class="p-services__inner">
+          <div class="p-services__img">
+            <img src="./images/common/services.jpg" alt="研究風景" />
+          </div>
+          <div class="p-services__text">
+            <div class="p-services__title c-section-title">
+              <h3 class="c-section-title__main">SERVICES</h3>
+              <span class="c-section-title__sub"
+                ><span class="section-title__partition">/</span>事業内容</span
+              >
+            </div>
+            <p class="p-services__heading c-section-heading">
+              人々の生活基盤を<br />
+              世界最高峰の技術で支える
+            </p>
+            <p class="p-services__description c-section-description">
+              <span class="u-block-tab">
+                私達のモットーは、 「社会基盤から世界をより良くする」こと。
+              </span>
+              そのために最前線で国家規模のプロフェクトに参画することもあれば、世界各国の技術者、研究者と共に次世代の建設機材の研究開発事業も同時に行うことで、業界の進化の促進を担っています。
+            </p>
+            <div class="p-services__btn c-btn">
+              <a href="#"
+                >事業内容を更に知る
+                <div class="c-btn__icon c-arrow">
+                  <img src="./images/common/arrow.png" alt="矢印アイコン" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--l-services p-services-->
+
+      <section class="l-about p-about">
+        <div class="p-about__inner l-inner">
+          <div class="p-about__img">
+            <img src="./images/common/bg-about.jpg" alt="自社工場内" />
+          </div>
+          <div class="p-about__body">
+            <div class="p-about__title c-section-title">
+              <h3 class="c-section-title__main">ABOUT</h3>
+              <span class="c-section-title__sub"
+                ><span class="section-title__partition">/</span
+                >園崎組について</span
+              >
+            </div>
+            <p class="p-about__description c-section-description">
+              <span class="u-block-tab"
+                >園崎組は埼玉県秩父市にて、主に土木工事にて</span
+              >社会基盤を支える企業になります。<br />
+              <span class="u-block-tab"
+                >また、自社工場において施工に必要とされる</span
+              >各種資材も生産しており、各業者に提供することで、社会基盤の構築・整備に貢献しております。
+            </p>
+            <div class="p-about__btn c-btn">
+              <a href="#"
+                >詳しく見る
+                <div class="c-btn__icon c-arrow">
+                  <img src="./images/common/arrow.png" alt="矢印アイコン" />
+                </div>
+              </a>
+            </div>
+            <div class="p-about__pc-img">
+              <img src="./images/pc/about.jpg" alt="ショベルカー" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--l-about p-about-->
     </main>
 
     <svg viewBox="0 0 272 60" class="c-footer-logo">

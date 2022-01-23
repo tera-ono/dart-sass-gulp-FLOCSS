@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.c-btn {
+  width: rem(254);
+  background-color: $main;
+  box-shadow: 0 2px 4px rgba(24, 40, 70, 0.46) ;
+}
+
+.c-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: rem(17) 0;
+  font-size: rem(14);
+  font-weight: $regular;
+  line-height: 1;
+  color: $white;
+  @include mq("md") {
+    padding: rem(25) 0;
+  }
+}
+
+.c-btn__icon {
+  margin-left: rem(13);
+}

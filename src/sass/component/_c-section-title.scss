@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.c-section-title__main {
+  display: inline-block;
+  font-size: rem(32);
+  font-weight: $bold;
+  line-height: 1;
+  color: $black;
+  @include mq("md") {
+    font-size: rem(48);
+  }
+}
+
+.c-section-title__sub {
+  display: inline-block;
+  font-size: rem(20);
+  font-weight: $medium;
+  line-height: 1;
+  color: $main;
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}
+
+.section-title__partition {
+  margin: 0 rem(8);
+}

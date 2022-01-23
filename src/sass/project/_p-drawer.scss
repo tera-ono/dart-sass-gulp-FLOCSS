@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.p-drawer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $main;
+  width: 100%;
+  padding-top: rem(57);
+  padding-bottom: rem(120);
+  z-index: $drawer;
+  opacity: 0;
+  visibility: hidden;
+  overflow: scroll;
+  transition: $transition-duration ease-out;
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.p-drawer.is-open {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity$transition-duration ease-out;
+}
+
+.p-drawer__inner {
+  margin-top: rem(80);
+  padding: $padding-sp;
+}
+
+.p-drawer__item {
+  display: block;
+  font-size: rem(20);
+  font-weight: $regular;
+  line-height: 1;
+  color: $black;
+  text-align: center;
+}
+
+.p-drawer__item:not(:first-of-type) {
+  color: $white;
+  margin-top: rem(40);
+}
+
+.p-drawer__item span {
+  display: block;
+  font-size: rem(14);
+  margin-top: rem(8);
+}
