@@ -42,3 +42,11 @@
   margin-top: rem(-2);
   transform: rotate(-135deg);
 }
+
+/* --- スクロールしてMVを通り過ぎた時にヘッダーを固定して、ロゴ・テキスト・ハンバーガーメニューの色を黒に変更 --- */
+.fixed .c-mobile-menu span {
+  background-color: $black;
+}
+.fixed .c-mobile-menu.is-open span {
+  background-color: $white;
+}

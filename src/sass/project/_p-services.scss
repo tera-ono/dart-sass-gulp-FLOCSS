@@ -65,7 +65,10 @@
 }
 
 .p-services__text {
+  max-width: rem(540); //状況によって変える必要があるかも
   margin-top: rem(40);
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 $padding-sp;
   @include mq("md") {
     margin-top: rem(0);

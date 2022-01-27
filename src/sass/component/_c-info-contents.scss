@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.c-info-contents {
+  @include mq("md") {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.c-info-contents__item {
+  @include mq("md") {
+    flex: 0 0 30.7389%;
+  }
+}
+
+/* --- 1列目:1番左の列(1) --- */
+.c-info-contents__item:nth-of-type(1) {
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
+/* --- 1列目:真ん中の列(2) --- */
+.c-info-contents__item:nth-of-type(2) {
+  @include mq("md") {
+    margin-top: rem(40);
+    margin-left: 3.5467%;
+  }
+}
+/* --- 1列目:1番右の列(3) --- */
+.c-info-contents__item:nth-of-type(3) {
+  @include mq("md") {
+    margin-left: 3.5467%;
+  }
+}
+
+/* 要素が今後増えた時に対応できる様にしておく(複数行)
+===================================================*/
+
+/* --- 1番左の列:2行目以降(4,7~) --- */
+.c-info-contents__item:nth-of-type(3n + 4) {
+  @include mq("md") {
+    margin-top: rem(120);
+  }
+}
+/* --- 真ん中の列:2行目以降(5,8~) --- */
+.c-info-contents__item:nth-of-type(3n + 5) {
+  @include mq("md") {
+    margin-top: rem(80);
+    margin-left: 3.5467%;
+  }
+}
+/* --- 1番右の列:2行目以降(6,9~) --- */
+.c-info-contents__item:nth-of-type(3n + 6) {
+  @include mq("md") {
+    margin-top: rem(40);
+    margin-left: 3.5467%;
+  }
+}

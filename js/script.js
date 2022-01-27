@@ -1,8 +1,11 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
+
+  /* --- ドロワーメニュー --- */
   $('.js-mobile-menu').on('click', function() {
     $(this).toggleClass('is-open');
     $('.js-drawer').toggleClass('is-open');
+    $('.js-header').toggleClass('is-open');
     /* --- 背景スクロール禁止&解除 --- */
     $('body').toggleClass('is-open');
   });
@@ -30,16 +33,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
-  //ドロワーメニュー
-  $("#MenuButton").click(function () {
-    // $(".l-drawer-menu").toggleClass("is-show");
-    // $(".p-drawer-menu").toggleClass("is-show");
-    $(".js-drawer-open").toggleClass("open");
-    $(".drawer-menu").toggleClass("open");
-    $("html").toggleClass("is-fixed");
-
-  });
-
 
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
@@ -53,5 +46,31 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
+
+
+  /* スクロールしてMVが見えなくなった所でヘッダーが固定して追従する
+  ===================================================*/
+  let header = $('.js-header');
+  let header_height = header.innerHeight();
+  let mv_height = $('.js-mv').innerHeight();
+  let target = header_height + mv_height;
+  var headNav = $("header");
+	//scrollだけだと読み込み時困るのでloadも追加
+	$(window).on('load scroll', function () {
+		//現在の位置が500px以上かつ、クラスfixedが付与されていない時
+		if($(this).scrollTop() > target && header.hasClass('fixed') == false) {
+			//headerの高さ分上(マイナス)に設定
+			header.css({"top": -(header_height)});
+			//クラスfixedを付与
+			header.addClass('fixed');
+			//位置を0に設定し、アニメーションのスピードを指定
+			header.animate({"top": 0},600);
+		}
+		//現在の位置が300px以下かつ、クラスfixedが付与されている時にfixedを外す
+		else if($(this).scrollTop() < target && header.hasClass('fixed') == true){
+			header.removeClass('fixed');
+		}
+  });
+
 
 });

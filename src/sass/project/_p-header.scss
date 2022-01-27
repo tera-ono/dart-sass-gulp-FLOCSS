@@ -3,17 +3,15 @@
 .p-header {
   background: linear-gradient(90deg, rgb(75, 108, 183) , rgb(24, 40, 72) );
   height: rem(57);
+  z-index: $header_z-index;
   @include mq("md") {
     height: rem(80);
   }
 }
 
-.p-header__logo-wrapper {
-  z-index: $header-logo;
-}
-
 .p-header__logo {
   margin-right: rem(20);
+  z-index: $header-logo_z-index;
 }
 
 .p-header__inner {
@@ -42,8 +40,21 @@
 .p-header__mobile-menu {
   height: inherit;
   margin-left: auto;
-  z-index: $mobile-menu-icon;
+  z-index: $mobile-menu_z-index;
   @include mq("md") {
     display: none;
   }
+}
+
+/* --- スクロールしてMVを通り過ぎた時にヘッダーを固定して、ロゴ・テキスト・ハンバーガーメニューの色を黒に変更 --- */
+.p-header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $white;
+}
+.p-header.fixed.is-open {
+  transition: $transition-duration ease-out;
+  background: $main;
 }

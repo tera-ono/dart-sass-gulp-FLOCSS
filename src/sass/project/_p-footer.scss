@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.p-footer__contents {
+  background-color: $navy;
+  padding-top: rem(28);
+  padding-bottom: rem(40);
+  @include mq("md") {
+    padding-top: 0;
+    padding-bottom: rem(120);
+  }
+}
+
+.p-footer__inner {
+  @include mq("md") {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.p-footer__nav {
+  @include mq("md") {
+    margin-top: rem(185);
+  }
+}
+
+.p-footer__info {
+  margin-top: rem(69);
+  @include mq("md") {
+    margin-top: rem(87);
+  }
+}
+
+.p-footer__copyright {
+  background-color: $black;
+}

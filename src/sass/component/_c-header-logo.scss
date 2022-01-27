@@ -7,3 +7,11 @@
     width: rem(136);
   }
 }
+
+/* --- スクロールしてMVを通り過ぎた時にヘッダーを固定して、ロゴ・テキスト・ハンバーガーメニューの色を黒に変更 --- */
+.fixed .c-header-logo {
+  fill: $black;
+}
+.fixed.is-open .c-header-logo {
+  fill: $white;
+}

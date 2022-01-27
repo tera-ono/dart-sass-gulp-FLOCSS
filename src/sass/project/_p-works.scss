@@ -1,0 +1,63 @@
+@use "global" as *;
+
+.p-works {
+  padding-top: rem(32);
+  padding-bottom: rem(40);
+  background: linear-gradient(
+    114deg,
+    #f0f0f0 0%,
+    #f0f0f0 13%,
+    #ffffff 13%,
+    #ffffff 86%,
+    #f0f0f0 86%,
+    #f0f0f0 100%
+  );
+  @include mq("md") {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: linear-gradient(
+    -132deg,
+    #f0f0f0 0%,
+    #f0f0f0 13%,
+    #ffffff 13%,
+    #ffffff 86%,
+    #f0f0f0 86%,
+    #f0f0f0 100%
+  );
+  }
+}
+
+.p-works__title {
+  @include mq("md") {
+    text-align: center;
+  }
+}
+
+.p-works__heading {
+  margin-top: rem(32);
+  @include mq("md") {
+    margin-top: rem(40);
+    text-align: center;
+  }
+}
+
+.p-works__description {
+  margin-top: rem(32);
+  @include mq("md") {
+    margin-top: rem(43);
+    text-align: center;
+  }
+}
+
+.p-works__cards {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(58);
+  }
+}
+
+.p-works__btn {
+  margin-top: rem(40);
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -29,12 +29,12 @@ const swiper = new Swiper('.swiper', {
   effect: 'fade',
 
   /* ---  自動再生 --- */
-  // autoplay : {
-  //   // 次のスライドまでの時間
-  //   delay: 4000,
-  //  //操作されたら自動再生を止める:true  止めない:false
-  //   disableOnInteraction: false,
-  // },
+  autoplay : {
+    // 次のスライドまでの時間
+    delay: 4000,
+   //操作されたら自動再生を止める:true  止めない:false
+    disableOnInteraction: false,
+  },
 
   
   

@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.c-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: rem(335);
+  padding: rem(18) rem(24);
+  @include mq("md") {
+    justify-content: center;
+    padding: rem(27) 0;
+  }
+}
+
+.c-link__icon {
+  @include mq("md") {
+    margin-right: rem(16);
+  }
+}
+
+.c-link__arrow {
+  @include mq("md") {
+    margin-left: rem(16);
+  }
+}

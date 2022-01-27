@@ -1,0 +1,88 @@
+@use "global" as *;
+
+.c-card {
+  display: block;
+  @include mq("md") {
+    box-shadow: 0 0 10px rgba(25, 25, 25, 0.25);
+  }
+}
+
+.c-card__img {
+  position: relative;
+  margin-right: calc(50% - 50vw);
+	margin-left: calc(50% - 50vw);
+  @include mq("md") {
+    margin: 0;
+  }
+}
+.c-card__img::before {
+  content: '';
+  display: block;
+  padding-top: 42.6666%;
+  @include mq("md") {
+    padding-top: 50.847%;
+  }
+}
+.c-card__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-position: center;
+  object-fit: cover;
+}
+
+.c-card__index {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  padding: rem(19) rem(20.4);
+  font-size: rem(20);
+  font-weight: $medium;
+  line-height: 0.02em;
+  color: $white;
+  background-color: $navy;
+  @include mq("md") {
+    top: -18px;
+    left: -15px;
+    bottom: auto;
+    padding: rem(26.8) rem(13.1);
+    font-size: rem(24);
+  }
+}
+
+
+.c-card__body {
+  margin-top: rem(24);
+  @include mq("md") {
+    margin-top: 0;
+    padding: rem(32) rem(24);
+    background-color: $white;
+  }
+}
+
+.c-card__title {
+  font-size: rem(20);
+  font-weight: $medium;
+  line-height: 1;
+  color: $accent;
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}
+
+.c-card__text {
+  font-size: rem(14);
+  font-weight: $regular;
+  line-height: 2;
+  letter-spacing: 0.02em;
+  color: $black;
+  margin-top: rem(24);
+  @include mq("md") {
+    margin-top: rem(32);
+  }
+}
+

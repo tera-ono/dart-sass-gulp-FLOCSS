@@ -1,0 +1,10 @@
+/* --- 重機や工場アイコン --- */
+@use "global" as *;
+
+.c-icon {
+  width: rem(15);
+  @include mq("md") {
+    width: rem(22);
+  }
+}
+

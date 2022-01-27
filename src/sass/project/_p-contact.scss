@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.p-contact {
+  background-image: url(../images/common/bg-contact.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: rem(96) 0;
+  @include mq("md") {
+    padding: rem(80) 0;
+  }
+}
+
+.p-contact__title {
+  @include mq("md") {
+    text-align: center;
+  }
+}
+
+.p-contact__title .c-section-title__main, 
+.p-contact__title .c-section-title__sub {
+  color: $white;
+}
+
+.p-contact__description {
+  margin-top: rem(32);
+  color: $white;
+  @include mq("md") {
+    margin-top: rem(43);
+    text-align: center;
+  }
+}
+
+.p-contact__links {
+  margin-top: rem(32);
+  @include mq("md") {
+    margin-top: rem(57);
+  }
+}

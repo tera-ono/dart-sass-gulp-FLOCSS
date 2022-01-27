@@ -3,3 +3,5 @@
 @use "./component/**";
 @use "./project/**";
 @use "./utility/**";
+/* --- 外部ライブラリを上書きする用のファイルが入っているフォルダ --- */
+@use "./external/**";

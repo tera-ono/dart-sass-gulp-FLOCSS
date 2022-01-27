@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.c-links {
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include mq("md") {
+    flex-direction: row;
+  }
+}
+
+.c-links__btn1 {
+  background-color: $accent;
+  @include mq("md") {
+    flex: 0 0 auto;
+  }
+}
+
+.c-links__btn2 {
+  background-color: $black;
+  margin-top: rem(24);
+  @include mq("md") {
+    margin-top: 0;
+    margin-left: rem(80);
+    flex: 0 0 auto;
+  }
+}

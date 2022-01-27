@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.c-copyright {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: rem(10);
+  font-weight: $regular;
+  line-height: 1;
+  color: $white ;
+  padding: rem(16) 0;
+  @include mq("md") {
+    font-size: rem(12);
+    padding: rem(24) 0;
+  }
+}

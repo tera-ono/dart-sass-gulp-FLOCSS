@@ -8,9 +8,10 @@
 
 .p-header-nav__item {
   position: relative;
-  text-align: center;
   height: inherit;
+  color: $white;
   margin-right: rem(20);
+  text-align: center;
 }
 
 .p-header-nav__item:not(:first-of-type) {
@@ -36,7 +37,6 @@
   font-size: rem(16);
   font-weight: $regular;
   line-height: 1;
-  color: $white;
   padding-left: rem(10);
   padding-right: rem(10);
 }
@@ -47,5 +47,14 @@
   font-size: rem(10);
   font-weight: $regular;
   line-height: 1;
-  color: $white;
+}
+
+/* --- スクロールしてMVを通り過ぎた時にヘッダーを固定して、ロゴ・テキスト・ハンバーガーメニューの色を黒に変更 --- */
+.fixed .p-header-nav__item {
+  color: $black;
+}
+.fixed .p-header-nav__item:not(:first-of-type) {
+  &::before {
+    background-color: $black;
+  }
 }

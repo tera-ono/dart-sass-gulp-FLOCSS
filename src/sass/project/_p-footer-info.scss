@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.p-footer-info__items {
+  margin-top: rem(25);
+  @include mq("md") {
+    margin-top: rem(42);
+  }
+}
+
+.p-footer-info__item {
+  font-size: rem(14);
+  font-weight: $regular;
+  line-height: 1;
+  color: $white;
+  @include mq("md") {
+    font-size: rem(16);
+    letter-spacing: 0.02em;
+  }
+}
+
+.p-footer-info__item + .p-footer-info__item {
+  margin-top: rem(16);
+  @include mq("md") {
+    margin-top: rem(26);
+  }
+}
+
+.p-footer-info__sub-item {
+  @include mq("md") {
+    display: block;
+    margin-top: rem(26);
+  }
+}
