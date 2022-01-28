@@ -11,19 +11,34 @@
 /* --- 背景2色 --- */
 .p-services::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(114deg, #f0f0f0 0%, #f0f0f0 59%, #ffffff 59%, #ffffff 92%, #f0f0f0 92%, #f0f0f0 100%);
+  background: linear-gradient(
+    115deg,
+    #f0f0f0 0%,
+    #f0f0f0 59.1%,
+    #ffffff 59.1%,
+    #ffffff 90.3%,
+    #f0f0f0 92%,
+    #f0f0f0 100%
+  );
   z-index: -1;
   @include mq("md") {
     height: 90%;
-    background: linear-gradient(132deg, #f0f0f0 0%, #f0f0f0 69%, #ffffff 69%, #ffffff 95%, #f0f0f0 95%, #f0f0f0 100%);
+    background: linear-gradient(
+      131deg,
+      #f0f0f0 0%,
+      #f0f0f0 68.3%,
+      #ffffff 68.3%,
+      #ffffff 90%,
+      #f0f0f0 90%,
+      #f0f0f0 100%
+    );
   }
 }
-
 
 .p-services__inner {
   width: 100%;
@@ -34,7 +49,7 @@
     display: flex;
     align-items: flex-start;
   }
-  @include mq("xl") {
+  @include mq("xxl") {
     margin-left: auto;
   }
 }
@@ -45,7 +60,7 @@
 }
 
 .p-services__img::before {
-  content: '';
+  content: "";
   display: block;
   padding-top: 66.13%;
   @include mq("md") {
@@ -66,38 +81,38 @@
 
 .p-services__text {
   max-width: rem(540); //状況によって変える必要があるかも
-  margin-top: rem(40);
+  margin-top: rem(34);
   margin-left: auto;
   margin-right: auto;
   padding: 0 $padding-sp;
   @include mq("md") {
-    margin-top: rem(0);
+    margin-top: rem(-8);
     margin-left: rem(47);
     padding: 0;
-    flex: 0 0 44.12%;
+    flex: 0 0 43.8%;
   }
 }
 
 .p-services__heading {
-  margin-top: rem(32);
+  margin-top: rem(16);
   @include mq("md") {
-    margin-top: rem(34);
+    margin-top: rem(21);
   }
 }
 
 .p-services__description {
-  margin-top: rem(32);
+  margin-top: rem(16);
   @include mq("md") {
-    margin-top: rem(27);
+    margin-top: rem(12);
   }
 }
 
 .p-services__btn {
-  margin-top: rem(32);
+  margin-top: rem(29);
   margin-left: auto;
   margin-right: auto;
   @include mq("md") {
-    margin-top: rem(40);
+    margin-top: rem(41);
     margin-left: 0;
   }
 }

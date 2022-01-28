@@ -42,7 +42,7 @@
   position: absolute;
   display: flex;
   align-items: center;
-  bottom: rem(16);
+  bottom: rem(15);
   left: 0;
   font-size: rem(16);
   font-weight: $regular;
@@ -54,7 +54,7 @@
     left: rem(56);
     transform: translateY(-50%);
     width: rem(264);
-    padding: rem(22) rem(16);
+    padding: rem(20) rem(16);
     background-color: rgba(102, 112, 133, 0.64);
   }
 }

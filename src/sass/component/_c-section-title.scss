@@ -12,16 +12,31 @@
 }
 
 .c-section-title__sub {
+  position: relative;
   display: inline-block;
   font-size: rem(20);
   font-weight: $medium;
   line-height: 1;
+  padding-left: rem(29);
   color: $main;
   @include mq("md") {
     font-size: rem(24);
+    padding-left: rem(36);
   }
 }
 
-.section-title__partition {
-  margin: 0 rem(8);
+.c-section-title__sub::before {
+  position: absolute;
+  top: rem(9);
+  left: rem(2);
+  display: inline-block;
+  content: '';
+  width: rem(23);
+  height: rem(1);
+  transform: rotate(-45deg);
+  background-color: $main;
+  @include mq("md") {
+    width: rem(30);
+    transform: rotate(-50deg);
+  }
 }

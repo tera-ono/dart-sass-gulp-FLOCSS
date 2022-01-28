@@ -5,9 +5,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: rem(96) 0;
+  padding-top: rem(90.2);
+  padding-bottom: rem(95.4);
   @include mq("md") {
-    padding: rem(80) 0;
+    padding-top: rem(70);
+    padding-bottom: rem(74);
   }
 }
 
@@ -17,23 +19,32 @@
   }
 }
 
+/* --- お問い合わせのみセクションタイトルが白色 --- */
 .p-contact__title .c-section-title__main, 
 .p-contact__title .c-section-title__sub {
   color: $white;
 }
+.p-contact__title .c-section-title__sub::before {
+  background-color: $white;
+}
+
 
 .p-contact__description {
-  margin-top: rem(32);
+  margin-top: rem(19.2);
+  font-size: rem(16);
+  letter-spacing: 0.045em;
   color: $white;
   @include mq("md") {
-    margin-top: rem(43);
+    margin-top: rem(27);
     text-align: center;
   }
 }
 
 .p-contact__links {
-  margin-top: rem(32);
+  margin-top: rem(24);
+  font-size: rem(14);
   @include mq("md") {
-    margin-top: rem(57);
+    margin-top: rem(46);
+    font-size: rem(16);
   }
 }

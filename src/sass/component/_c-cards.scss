@@ -8,7 +8,7 @@
 }
 
 .c-cards__item:not(:first-of-type) {
-  margin-top: rem(40);
+  margin-top: rem(33);
   @include mq("md") {
     margin-top: 0;
   }

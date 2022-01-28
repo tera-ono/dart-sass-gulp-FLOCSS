@@ -23,3 +23,11 @@
     display: inline;
   }
 }
+
+/* --- pcサイズでインラインブロックになり改行させない --- */
+.u-inline-pc {
+  display: block;
+  @include mq("xl") {
+    display: inline;
+  }
+}

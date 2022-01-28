@@ -1,29 +1,29 @@
 @use "global" as *;
 
 .p-works {
-  padding-top: rem(32);
+  padding-top: rem(24);
   padding-bottom: rem(40);
   background: linear-gradient(
-    114deg,
+    115deg,
     #f0f0f0 0%,
-    #f0f0f0 13%,
-    #ffffff 13%,
-    #ffffff 86%,
-    #f0f0f0 86%,
+    #f0f0f0 12.2%,
+    #ffffff 12.2%,
+    #ffffff 87.8%,
+    #f0f0f0 87.8%,
     #f0f0f0 100%
   );
   @include mq("md") {
     padding-top: 0;
     padding-bottom: 0;
     background: linear-gradient(
-    -132deg,
-    #f0f0f0 0%,
-    #f0f0f0 13%,
-    #ffffff 13%,
-    #ffffff 86%,
-    #f0f0f0 86%,
-    #f0f0f0 100%
-  );
+      -131deg,
+      #f0f0f0 0%,
+      #f0f0f0 17.3%,
+      #ffffff 17.3%,
+      #ffffff 82.5%,
+      #f0f0f0 82.5%,
+      #f0f0f0 100%
+    );
   }
 }
 
@@ -34,30 +34,32 @@
 }
 
 .p-works__heading {
-  margin-top: rem(32);
+  margin-top: rem(18);
   @include mq("md") {
-    margin-top: rem(40);
     text-align: center;
   }
 }
 
 .p-works__description {
-  margin-top: rem(32);
+  margin-top: rem(14.9);
   @include mq("md") {
-    margin-top: rem(43);
+    margin-top: rem(23);
     text-align: center;
   }
 }
 
 .p-works__cards {
-  margin-top: rem(40);
+  margin-top: rem(35);
   @include mq("md") {
-    margin-top: rem(58);
+    margin-top: rem(50);
   }
 }
 
 .p-works__btn {
-  margin-top: rem(40);
+  margin-top: rem(34);
   margin-left: auto;
   margin-right: auto;
+  @include mq("md") {
+    margin-top: rem(40);
+  }
 }

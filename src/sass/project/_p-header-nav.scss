@@ -10,10 +10,14 @@
   position: relative;
   height: inherit;
   color: $white;
-  margin-right: rem(20);
   text-align: center;
 }
 
+.p-header-nav__item:not(:first-of-type) {
+  margin-left: rem(17);
+}
+
+/* --- ナビリンクの斜線 --- */
 .p-header-nav__item:not(:first-of-type) {
   &::before {
     position: absolute;
@@ -22,7 +26,7 @@
     display: inline-block;
     content: "";
     width: rem(1);
-    height: rem(30);
+    height: rem(32);
     background-color: $white;
     transform: translateY(-50%) rotate(-140deg);
   }
@@ -40,6 +44,10 @@
   padding-left: rem(10);
   padding-right: rem(10);
 }
+.p-header-nav__item:first-of-type a {
+  padding-left: rem(5);
+}
+
 
 .p-header-nav__item span {
   display: block;

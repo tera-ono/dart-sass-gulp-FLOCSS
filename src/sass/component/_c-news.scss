@@ -2,15 +2,23 @@
 
 .c-news {
   display: block;
- @include mq("md") {
-   display: flex;
-   align-items: center;
-   height: rem(64);
-   padding-left: rem(40);
-   padding-right: rem(30);
-   border: 1px solid $black;
-   background: linear-gradient(135deg, $navy 0%, $navy 16%, $white 16%, $white 88%, $navy 88%, $navy 100% );
- }
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+    height: rem(64);
+    padding-left: rem(40);
+    padding-right: rem(30);
+    border: 1px solid $black;
+    background: linear-gradient(
+      131deg,
+      #182848 0%,
+      #182848 16.1%,
+      #ffffff 16.1%,
+      #ffffff 88.8%,
+      #182848 88.8%,
+      #182848 100%
+    );
+  }
 }
 
 .c-news__heading {
@@ -18,12 +26,18 @@
   font-size: rem(14);
   font-weight: $regular;
   line-height: 1;
-  padding-top: rem(5);  
+  padding-top: rem(3);
   padding-bottom: rem(5);
   padding-left: rem(12);
-  padding-right: rem(21);
+  padding-right: rem(23);
   color: $white;
-  background: linear-gradient(256deg, transparent 0%, transparent 10%, $navy 10%, $navy 100%);
+  background: linear-gradient(
+    243deg,
+    transparent 0%,
+    transparent 14%,
+    #182848 14%,
+    #182848 100%
+  );
 
   @include mq("md") {
     font-size: rem(16);
@@ -40,7 +54,7 @@
   @include mq("sm") {
     display: flex;
     align-items: center;
-    padding: rem(14) rem(8);
+    padding: rem(12) rem(8);
   }
 
   @include mq("md") {
@@ -54,8 +68,8 @@
 .c-news__category {
   color: $white;
   background-color: $accent;
-  margin-left: rem(14);
-  
+  margin-left: rem(10);
+
   @include mq("sm") {
     flex: 0 0 auto;
   }
@@ -65,7 +79,8 @@
   }
 }
 
-.c-news__time, .c-news__title {
+.c-news__time,
+.c-news__title {
   display: inline-block;
   font-size: rem(13);
   font-weight: $regular;
@@ -77,10 +92,12 @@
 }
 
 .c-news__title {
+  letter-spacing: 0.08em;
   @include mq("sm") {
     margin-left: rem(8);
   }
   @include mq("md") {
+    letter-spacing: 0;
     margin-left: rem(24);
     margin-right: rem(48);
   }

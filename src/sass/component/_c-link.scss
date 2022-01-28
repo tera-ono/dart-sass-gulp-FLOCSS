@@ -5,10 +5,11 @@
   align-items: center;
   justify-content: space-between;
   width: rem(335);
-  padding: rem(18) rem(24);
+  padding: rem(13.3) rem(24);
   @include mq("md") {
     justify-content: center;
-    padding: rem(27) 0;
+    width: rem(320);
+    padding: rem(24) 0;
   }
 }
 

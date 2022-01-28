@@ -39,11 +39,8 @@
 
 /* --- mvテキスト --- */
 .p-top-mv__text {
-  padding-top: rem(107);
+  padding-top: rem(97);
   z-index: 2;
-  @include mq("md") {
-    padding-top: rem(110);
-  }
 }
 
 .p-top-mv__title {
@@ -64,10 +61,9 @@
   font-weight: $bold;
   line-height: 1;
   color: $navy;
-  margin-top: rem(12.8);
+  margin-top: rem(23);
   @include mq("md") {
-    font-size: rem(32);
-    margin-top: rem(42);
+    font-size: rem(27);
   }
 }
 
@@ -84,34 +80,37 @@
   }
 
   @include mq("md") {
+    margin-left: rem(26);
     box-shadow: 8px 6px $navy;
+    transform: skewX(-38deg);
   }
   
 }
 
 .p-top-mv__sub-text:not(:first-of-type) {
-  margin-top: rem(14);
+  margin-top: rem(11);
   @include mq("md") {
-    margin-top: rem(16);
+    margin-top: rem(14);
   }
 }
 
 .p-top-mv__sub-text h3 {
   display: inline-block;
-  padding: rem(9);
+  padding: rem(9) rem(15);
   /* ---テキストを枠と逆に傾けることで相殺し普通の角度にしている    --- */
   transform: skewX(27deg);
   @include mq("md") {
-    padding: rem(5.6) rem(30);
+    padding: rem(17) rem(27);
+    transform: skewX(38deg);
   }
 }
 
 .p-top-mv__news {
   margin-top: rem(65);
   @include mq("sm") {
-    margin-top: rem(134);
+    margin-top: rem(131);
   }
   @include mq("md") {
-    margin-top: rem(110);
+    margin-top: rem(119);
   }
 }

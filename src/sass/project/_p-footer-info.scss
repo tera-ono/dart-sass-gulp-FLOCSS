@@ -1,9 +1,13 @@
 @use "global" as *;
 
+.p-footer-info__logo {
+  display: block;
+}
+
 .p-footer-info__items {
-  margin-top: rem(25);
+  margin-top: rem(15);
   @include mq("md") {
-    margin-top: rem(42);
+    margin-top: rem(33);
   }
 }
 
@@ -21,13 +25,13 @@
 .p-footer-info__item + .p-footer-info__item {
   margin-top: rem(16);
   @include mq("md") {
-    margin-top: rem(26);
+    margin-top: rem(22);
   }
 }
 
 .p-footer-info__sub-item {
   @include mq("md") {
     display: block;
-    margin-top: rem(26);
+    margin-top: rem(21);
   }
 }

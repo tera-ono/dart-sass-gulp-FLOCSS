@@ -5,10 +5,12 @@
   font-size: rem(10);
   font-weight: $regular;
   line-height: 1;
-  color: $white ;
-  padding: rem(16) 0;
+  color: $white;
+  padding-top: rem(16);
+  padding-bottom: rem(16);
   @include mq("md") {
     font-size: rem(12);
-    padding: rem(24) 0;
+    padding-top: rem(24);
+    padding-bottom: rem(24);
   }
 }

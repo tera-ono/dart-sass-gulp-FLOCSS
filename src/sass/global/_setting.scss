@@ -75,7 +75,8 @@ $breakpoints: (
   sm: 375,
   md: 768,
   lg: 1024,
-  xl: 1367,
+  xl: 1366,
+  xxl: 1600,
 );
 
 
@@ -85,6 +86,7 @@ $mediaquerys: (
   md: "screen and (min-width: #{map-get($breakpoints,'md')}px)",
   lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
   xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
+  xxl: "screen and (min-width: #{map-get($breakpoints,'xxl')}px)",
 );
 
 // @include mq(){}で書くとブレークポイントが反映される（初期値はmd）

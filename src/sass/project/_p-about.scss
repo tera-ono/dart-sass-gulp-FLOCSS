@@ -36,35 +36,43 @@
 }
 
 .p-about__body {
-  margin-top: rem(40);
+  margin-top: rem(36);
   background-color: $white;
   @include mq("md") {
     max-width: rem(505);
     width: 100%;
     margin-top: 0;
-    padding: rem(48);
+    padding: rem(40) rem(50) rem(46);
   }
 }
 
 .p-about__description {
-  margin-top: rem(32);
+  margin-top: rem(17);
   @include mq("md") {
-    margin-top: rem(40);
+    margin-top: rem(24);
     overflow-wrap: break-word;
     word-break: keep-all;
   }
 }
 
 .p-about__btn {
-  margin-top: rem(32);
+  margin-top: rem(29);
   margin-left: auto;
   margin-right: auto;
+  font-feature-settings: "palt";
+
   @include mq("md") {
-    margin-top: rem(40);
+    margin-top: rem(37);
     margin-left: 0;
     margin-right: 0;
+    font-feature-settings: initial;
   }
 }
+/* --- コンポーネント上書き --- */
+.p-about__btn a .c-btn__icon {
+  margin-left: rem(23);
+}
+
 
 .p-about__pc-img {
   /* --- sp時非表示 --- */

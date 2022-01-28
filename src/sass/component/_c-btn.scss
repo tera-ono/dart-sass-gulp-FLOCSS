@@ -10,16 +10,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: rem(17) 0;
+  padding: rem(15) 0;
   font-size: rem(14);
   font-weight: $regular;
   line-height: 1;
   color: $white;
   @include mq("md") {
+    font-size: rem(16);
     padding: rem(25) 0;
   }
 }
 
 .c-btn__icon {
-  margin-left: rem(13);
+  margin-left: rem(7.5);
 }

@@ -23,9 +23,9 @@
 
 .p-footer-nav__item a {
   display: block;
-  padding: rem(14) 0;
+  padding: rem(12) 0;
   @include mq("md") {
-    padding: rem(14) rem(12);
+    padding: rem(14) rem(10.8);
   }
 }
 
