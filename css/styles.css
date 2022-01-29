@@ -172,16 +172,6 @@ select::-ms-expand {
   }
 }
 
-.l-contact {
-  margin-top: 120px;
-  margin-top: 7.5rem;
-}
-@media screen and (min-width: 768px) {
-  .l-contact {
-    margin-top: 5rem;
-  }
-}
-
 .l-inner {
   max-width: 540px;
   max-width: 33.75rem;
@@ -1090,6 +1080,33 @@ select::-ms-expand {
   }
 }
 
+/* --- aos.jsでspとtablet~のアニメーションを変える --- */
+.p-about__body[data-aos=new-animation] {
+  opacity: 0;
+  -webkit-transform: translate(0, 100px);
+          transform: translate(0, 100px);
+}
+@media screen and (min-width: 768px) {
+  .p-about__body[data-aos=new-animation] {
+    -webkit-transform: translate(30vw, 0);
+            transform: translate(30vw, 0);
+  }
+}
+
+.p-about__body[data-aos=new-animation].aos-animate {
+  opacity: 1;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+@media screen and (min-width: 768px) {
+  .p-about__body[data-aos=new-animation].aos-animate {
+    -webkit-transition: 1.5s ease-out;
+    transition: 1.5s ease-out;
+  }
+}
+
 .p-about__description {
   margin-top: 17px;
   margin-top: 1.0625rem;
@@ -1584,9 +1601,15 @@ select::-ms-expand {
   background: #3e5b9c;
 }
 
+.p-recruit {
+  padding-bottom: 120px;
+  padding-bottom: 7.5rem;
+}
 @media screen and (min-width: 768px) {
   .p-recruit {
     padding-top: 4.3125rem;
+    padding-bottom: 5rem;
+    background-color: #f0f0f0;
   }
 }
 
@@ -2052,11 +2075,62 @@ select::-ms-expand {
 /* ---#global-container: body直下全てを囲んでいるボックス（ページ全体） --- */
 /* --- ローディング完了後にbodyに付与されるクラス --- */
 .pace-done #global-container {
-  opacity: 1;
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+  position: relative;
+  -webkit-transition: 0.9s ease-in;
+  transition: 0.9s ease-in;
 }
 
+.pace-done #global-container::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, .2);
+  z-index: 500;
+  /* ---both: 再生前、最初のキーフレームの状態を保持 && 再生後、最後のキーフレームの状態を保持 --- */
+  -webkit-animation: cover-slide 1.2s ease-out both -0.2s;
+          animation: cover-slide 1.2s ease-out both -0.2s;
+}
+@media screen and (min-width: 768px) {
+  .pace-done #global-container::after {
+    -webkit-animation-duration: 1.8s;
+            animation-duration: 1.8s;
+    -webkit-animation-delay: -0.6s;
+            animation-delay: -0.6s;
+  }
+}
+
+@-webkit-keyframes cover-slide {
+  0% {
+    left: 0;
+    right: 0;
+  }
+  50% {
+    left: 0;
+    right: 0;
+  }
+  100% {
+    left: 100%;
+    right: 0;
+  }
+}
+
+@keyframes cover-slide {
+  0% {
+    left: 0;
+    right: 0;
+  }
+  50% {
+    left: 0;
+    right: 0;
+  }
+  100% {
+    left: 100%;
+    right: 0;
+  }
+}
 /* --- ローディング中にbodyに付与されるクラス --- */
 .pace-running #global-container {
   opacity: 0;

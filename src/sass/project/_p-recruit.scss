@@ -1,8 +1,11 @@
 @use "global" as *;
 
 .p-recruit {
+  padding-bottom: rem(120);
   @include mq("md") {
     padding-top: rem(69);
+    padding-bottom: rem(80);
+    background-color: $gray;
   }
 }
 

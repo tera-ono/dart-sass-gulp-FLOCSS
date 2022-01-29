@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+  <head>  
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
@@ -8,22 +8,31 @@
     <title>株式会社 園崎組</title>
     <meta
       name="description"
-      content="私達のモットーは、 「社会基盤から世界をより良くする」こと。"
+      content="私達のモットーは、 「社会基盤から世界をより良くする」こと。
+      そのために最前線で国家規模のプロフェクトに参画することもあれば、 世界各国の技術者、研究者と共に次世代の建設機材の研究開発事業も 同時に行うことで、業界の進化の促進を担っています。"
     />
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="株式会社 園崎組" />
     <!-- ogp -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:title" content="トップページ" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tera-ono.website/shogo-photshop/" />
+    <meta property="og:image" content="https://tera-ono.website/shogo-photshop/images/ogp-imag.jpg" />
     <meta property="og:site_name" content="株式会社 園崎組" />
     <meta
       property="og:description"
-      content="私達のモットーは、 「社会基盤から世界をより良くする」こと。"
+      content="私達のモットーは、 「社会基盤から世界をより良くする」こと。
+      そのために最前線で国家規模のプロフェクトに参画することもあれば、 世界各国の技術者、研究者と共に次世代の建設機材の研究開発事業も 同時に行うことで、業界の進化の促進を担っています。"
     />
     <meta name="robots" content="noindex" />
     <!-- ファビコン -->
-    <link rel="”icon”" href="" />
+    <link rel="icon" href="./images/favicon/favicon.ico" id="favicon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon-180x180.png"
+    />
+    <link rel="icon" type="image/png" href="images/favicon/android-chrome-192x192.png" sizes="192x192">
+
     <!-- adobe-font lato-->
     <link rel="stylesheet" href="https://use.typekit.net/yqe3syr.css" />
     <!-- google-font noto sans jp-->
@@ -32,6 +41,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
       rel="stylesheet"
+    />
+    <!-- aos.js CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
     <!-- swiper.js CDN -->
     <link
@@ -153,22 +167,22 @@
           <nav class="p-header__nav p-header-nav">
             <ul class="p-header-nav__items">
               <li class="p-header-nav__item">
-                <a href="#">トップ<span>TOP</span></a>
+                <a href="#a-top">トップ<span>TOP</span></a>
               </li>
               <li class="p-header-nav__item">
-                <a href="#">事業内容<span>SERVICES</span></a>
+                <a href="#a-services">事業内容<span>SERVICES</span></a>
               </li>
               <li class="p-header-nav__item">
-                <a href="#">園崎組について<span>ABOUT</span></a>
+                <a href="#a-about">園崎組について<span>ABOUT</span></a>
               </li>
               <li class="p-header-nav__item">
-                <a href="#">園崎組の実績<span>WORKS</span></a>
+                <a href="#a-works">園崎組の実績<span>WORKS</span></a>
               </li>
               <li class="p-header-nav__item">
-                <a href="#">採用情報<span>RECRUIT</span></a>
+                <a href="#a-recruit">採用情報<span>RECRUIT</span></a>
               </li>
               <li class="p-header-nav__item">
-                <a href="#">お問い合わせ<span>CONTACT</span></a>
+                <a href="#a-contact">お問い合わせ<span>CONTACT</span></a>
               </li>
             </ul>
           </nav>
@@ -181,34 +195,34 @@
       </header>
       <div class="l-drawer p-drawer js-drawer">
         <div class="p-drawer__inner">
-          <a href="#" class="p-drawer__item"
+          <a href="#a-top" class="p-drawer__item js-drawer-link"
             >トップ
             <span>TOP</span>
           </a>
-          <a href="#" class="p-drawer__item"
+          <a href="#a-services" class="p-drawer__item js-drawer-link"
             >事業内容
             <span>SERVICES</span>
           </a>
-          <a href="#" class="p-drawer__item"
+          <a href="#a-about" class="p-drawer__item js-drawer-link"
             >園崎組について
             <span>ABOUT</span>
           </a>
-          <a href="#" class="p-drawer__item"
+          <a href="#a-works" class="p-drawer__item js-drawer-link"
             >園崎組の実績
             <span>WORKS</span>
           </a>
-          <a href="#" class="p-drawer__item"
+          <a href="#a-recruit" class="p-drawer__item js-drawer-link"
             >採用情報
             <span>RECRUIT</span>
           </a>
-          <a href="#" class="p-drawer__item"
+          <a href="#a-contact" class="p-drawer__item js-drawer-link"
             >お問い合わせ
             <span>CONTACT</span>
           </a>
         </div>
       </div>
       <main>
-        <section class="l-top-mv p-top-mv js-mv">
+        <section class="l-top-mv p-top-mv js-mv" id="a-top">
           <!-- Slider main container -->
           <div class="swiper">
             <!-- Additional required wrapper -->
@@ -224,7 +238,7 @@
                     media="(min-width: 768px)"
                     srcset="./images/pc/mv-pc1.png"
                   />
-                  <img src="./images/pc/mv-pc1.png" alt="" />
+                  <img src="./images/pc/mv-pc1.png" alt="作業現場上空画像" decoding="async"/>
                 </picture>
               </div>
               <div class="swiper-slide">
@@ -237,7 +251,7 @@
                     media="(min-width: 768px)"
                     srcset="./images/pc/mv-pc2.png"
                   />
-                  <img src="./images/pc/mv-pc2.png" alt="" />
+                  <img src="./images/pc/mv-pc2.png" alt="トンネル工事" decoding="async" />
                 </picture>
               </div>
               <div class="swiper-slide">
@@ -250,7 +264,7 @@
                     media="(min-width: 768px)"
                     srcset="./images/pc/mv-pc3.png"
                   />
-                  <img src="./images/pc/mv-pc3.png" alt="" />
+                  <img src="./images/pc/mv-pc3.png" alt="溶接作業" decoding="async" />
                 </picture>
               </div>
             </div>
@@ -258,7 +272,7 @@
           <div class="p-top-mv__text">
             <div class="p-top-mv__inner l-inner">
               <h2 class="p-top-mv__title">
-                CHALLENGE <br>
+                CHALLENGE <br />
                 <span class="u-inline-pc">FROM </span>THE BOTTOM
               </h2>
               <div class="p-top-mv__sub-title">
@@ -279,7 +293,7 @@
                     <p class="c-news__title">新サイトを公開しました。</p>
                   </div>
                   <div class="c-news__icon c-arrow">
-                    <img src="./images/common/arrow.png" alt="矢印アイコン" />
+                    <img src="./images/common/arrow.png" decoding="async" loading="lazy" alt="矢印アイコン" />
                   </div>
                 </a>
               </div>
@@ -288,12 +302,16 @@
           </div>
         </section>
         <!-- l-top-mv p-top-mv-->
-        <section class="l-services p-services">
+        <section class="l-services p-services" id="a-services">
           <div class="p-services__inner">
             <div class="p-services__img">
-              <img src="./images/common/services.jpg" alt="研究風景" />
+              <img src="./images/common/services.jpg" decoding="async" loading="lazy" alt="研究風景" />
             </div>
-            <div class="p-services__text">
+            <div
+              class="p-services__text"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <div class="p-services__title c-section-title">
                 <h3 class="c-section-title__main">SERVICES</h3>
                 <span class="c-section-title__sub">事業内容</span>
@@ -309,10 +327,10 @@
                 そのために最前線で国家規模のプロフェクトに参画することもあれば、世界各国の技術者、研究者と共に次世代の建設機材の研究開発事業も同時に行うことで、業界の進化の促進を担っています。
               </p>
               <div class="p-services__btn c-btn">
-                <a href="#"
+                <a href="#a-services"
                   >事業内容を更に知る
                   <div class="c-btn__icon c-arrow">
-                    <img src="./images/common/arrow.png" alt="矢印アイコン" />
+                    <img src="./images/common/arrow.png" decoding="async" loading="lazy" alt="矢印アイコン" />
                   </div>
                 </a>
               </div>
@@ -320,12 +338,13 @@
           </div>
         </section>
         <!--l-services p-services-->
-        <section class="l-about p-about">
+
+        <section class="l-about p-about" id="a-about">
           <div class="p-about__inner l-inner">
             <div class="p-about__img">
-              <img src="./images/common/bg-about.jpg" alt="自社工場内" />
+              <img src="./images/common/bg-about.jpg" decoding="async" loading="lazy" alt="自社工場内" />
             </div>
-            <div class="p-about__body">
+            <div class="p-about__body" data-aos="new-animation">
               <div class="p-about__title c-section-title">
                 <h3 class="c-section-title__main">ABOUT</h3>
                 <span class="c-section-title__sub">園崎組について</span>
@@ -342,18 +361,19 @@
                 <a href="#"
                   >詳しく見る
                   <div class="c-btn__icon c-arrow">
-                    <img src="./images/common/arrow.png" alt="矢印アイコン" />
+                    <img src="./images/common/arrow.png" decoding="async" loading="lazy" alt="矢印アイコン" />
                   </div>
                 </a>
               </div>
               <div class="p-about__pc-img">
-                <img src="./images/pc/about.jpg" alt="ショベルカー" />
+                <img src="./images/pc/about.jpg" decoding="async" loading="lazy" alt="ショベルカー" />
               </div>
             </div>
           </div>
         </section>
         <!--l-about p-about-->
-        <section class="l-works p-works">
+
+        <section class="l-works p-works" id="a-works">
           <div class="p-works__inner l-inner">
             <div class="p-works__title c-section-title">
               <h3 class="c-section-title__main">WORKS</h3>
@@ -370,10 +390,15 @@
               その一部を紹介させていただきます。
             </p>
             <div class="p-works__cards c-cards">
-              <a class="c-cards__item c-card">
+              <a
+                class="c-cards__item c-card"
+                data-aos="flip-up"
+                data-aos-duration="900"
+                data-aos-easing="ease-out"
+              >
                 <div class="c-card__img">
                   <img
-                    src="./images/common/works-1.jpg"
+                    src="./images/common/works-1.jpg" decoding="async" loading="lazy"
                     alt="大型重機での作業"
                   />
                   <span class="c-card__index">01</span>
@@ -385,9 +410,14 @@
                   </dd>
                 </dl>
               </a>
-              <a class="c-cards__item c-card">
+              <a
+                class="c-cards__item c-card"
+                data-aos="flip-up"
+                data-aos-duration="900"
+                data-aos-easing="ease-out"
+              >
                 <div class="c-card__img">
-                  <img src="./images/common/works-2.jpg" alt="施工現場" />
+                  <img src="./images/common/works-2.jpg" decoding="async" loading="lazy" alt="施工現場" />
                   <span class="c-card__index">02</span>
                 </div>
                 <dl class="c-card__body">
@@ -403,56 +433,72 @@
               <a href="#"
                 >実績一覧を見る
                 <div class="c-btn__icon c-arrow">
-                  <img src="./images/common/arrow.png" alt="矢印アイコン" />
+                  <img src="./images/common/arrow.png" decoding="async" loading="lazy" alt="矢印アイコン" />
                 </div>
               </a>
             </div>
           </div>
         </section>
         <!-- /.l-works p-works -->
-        <section class="l-recruit p-recruit">
+
+        <section class="l-recruit p-recruit" id="a-recruit">
           <div class="p-recruit__inner l-inner">
             <div class="p-recruit__title c-section-title">
               <h3 class="c-section-title__main">RECRUIT</h3>
               <span class="c-section-title__sub">採用情報</span>
             </div>
             <div class="p-recruit__items c-info-contents">
-              <a href="#" class="c-info-contents__item c-info">
+              <a
+                href="#"
+                class="c-info-contents__item c-info"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
                 <div class="c-info__img">
-                  <img src="./images/common/recruit-1.jpg" alt="現場航空写真" />
+                  <img src="./images/common/recruit-1.jpg" decoding="async" loading="lazy" alt="現場航空写真" />
                 </div>
                 <p class="c-info__link">
                   園崎組を知る
                   <span class="c-btn__icon c-arrow">
-                    <img src="./images/common/arrow.png" alt="矢印アイコン" />
+                    <img src="./images/common/arrow.png" decoding="async" loading="lazy" alt="矢印アイコン" />
                   </span>
                 </p>
               </a>
-              <a href="#" class="c-info-contents__item c-info">
+              <a
+                href="#"
+                class="c-info-contents__item c-info"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
                 <div class="c-info__img">
                   <img
-                    src="./images/common/recruit-2.jpg"
+                    src="./images/common/recruit-2.jpg" decoding="async" loading="lazy"
                     alt="仕事をする社員"
                   />
                 </div>
                 <p class="c-info__link">
                   園崎組の一日
                   <span class="c-btn__icon c-arrow">
-                    <img src="./images/common/arrow.png" alt="矢印アイコン" />
+                    <img src="./images/common/arrow.png" decoding="async" loading="lazy" alt="矢印アイコン" />
                   </span>
                 </p>
               </a>
-              <a href="#" class="c-info-contents__item c-info">
+              <a
+                href="#"
+                class="c-info-contents__item c-info"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
                 <div class="c-info__img">
                   <img
-                    src="./images/common/recruit-3.jpg"
+                    src="./images/common/recruit-3.jpg" decoding="async" loading="lazy"
                     alt="現場で働く女性社員"
                   />
                 </div>
                 <p class="c-info__link">
                   求める人物像
                   <span class="c-btn__icon c-arrow">
-                    <img src="./images/common/arrow.png" alt="矢印アイコン" />
+                    <img src="./images/common/arrow.png" decoding="async" loading="lazy" alt="矢印アイコン" />
                   </span>
                 </p>
               </a>
@@ -461,14 +507,15 @@
               <a href="#"
                 >エントリーはこちら
                 <div class="c-btn__icon c-arrow">
-                  <img src="./images/common/arrow.png" alt="矢印アイコン" />
+                  <img src="./images/common/arrow.png" decoding="async" loading="lazy" alt="矢印アイコン" />
                 </div>
               </a>
             </div>
           </div>
         </section>
         <!-- l-recruit p-recruit-->
-        <section class="section l-contact p-contact">
+
+        <section class="section l-contact p-contact" id="a-contact">
           <div class="p-contact__inner l-inner">
             <div class="p-contact__title c-section-title">
               <h3 class="c-section-title__main">CONTACT</h3>
@@ -483,20 +530,20 @@
             <div class="p-contact__links c-links">
               <a href="#" class="c-links__btn1 c-link">
                 <div class="c-link__icon c-icon">
-                  <img src="./images/common/Backhoe.svg" alt="アイコン" />
+                  <img src="./images/common/Backhoe.svg" decoding="async" loading="lazy" alt="アイコン" />
                 </div>
                 施工のご相談
                 <div class="c-link__arrow c-arrow">
-                  <img src="./images/common/arrow.png" alt="矢印アイコン" />
+                  <img src="./images/common/arrow.png" decoding="async" loading="lazy" alt="矢印アイコン" />
                 </div>
               </a>
               <a href="#" class="c-links__btn2 c-link">
                 <div class="c-link__icon c-icon">
-                  <img src="./images/common/Factory.svg" alt="アイコン" />
+                  <img src="./images/common/Factory.svg" decoding="async" loading="lazy" alt="アイコン" />
                 </div>
                 特注制作のご相談
                 <div class="c-link__arrow c-arrow">
-                  <img src="./images/common/arrow.png" alt="矢印アイコン" />
+                  <img src="./images/common/arrow.png" decoding="async" loading="lazy" alt="矢印アイコン" />
                 </div>
               </a>
             </div>
@@ -510,24 +557,24 @@
             <nav class="p-footer__nav p-footer-nav">
               <ul class="p-footer-nav__items">
                 <li class="p-footer-nav__item">
-                  <a href="#">トップ</a>
+                  <a href="#a-top">トップ</a>
                 </li>
                 <li class="p-footer-nav__item">
-                  <a href="#">事業内容</a>
+                  <a href="#a-services">事業内容</a>
                 </li>
                 <li class="p-footer-nav__item">
-                  <a href="#">園崎組について</a>
+                  <a href="#a-about">園崎組について</a>
                 </li>
                 <li class="p-footer-nav__item">
-                  <a href="#">園崎組の実績</a>
+                  <a href="#a-works">園崎組の実績</a>
                 </li>
               </ul>
               <ul class="p-footer-nav__items">
                 <li class="p-footer-nav__item">
-                  <a href="#">採用</a>
+                  <a href="#a-recruit">採用</a>
                 </li>
                 <li class="p-footer-nav__item">
-                  <a href="#">お問い合わせ</a>
+                  <a href="#a-contact">お問い合わせ</a>
                 </li>
               </ul>
             </nav>
@@ -558,13 +605,17 @@
         </div>
       </footer>
     </div>
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- pace.js ローディングライブラリ -->
     <script src="./js/pace.min.js"></script>
     <!-- swiper.js CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
     <!-- スライダー -->
     <script src="./js/mv-slider.js"></script>
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- aos.js CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- オリジナル -->
     <script src="./js/script.js"></script>
   </body>
 </html>

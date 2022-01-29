@@ -8,8 +8,41 @@
 
 /* --- ローディング完了後にbodyに付与されるクラス --- */
 .pace-done #global-container {
-  opacity: 1;
-  transition: opacity 1s ease-in-out;
+  position: relative;
+  transition: 0.9s ease-in;
+  
+}
+
+.pace-done #global-container::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  background-color: rgba(0, 0, 0,  0.2);
+  z-index: 500;
+  /* ---both: 再生前、最初のキーフレームの状態を保持 && 再生後、最後のキーフレームの状態を保持 --- */
+  animation: cover-slide 1.2s ease-out both -0.2s;
+  @include mq("md") {
+    animation-duration: 1.8s;
+    animation-delay: -0.6s;
+  }
+}
+@keyframes cover-slide {
+  0% {
+    left: 0;
+    right: 0;
+    
+  }
+  50% {
+    left: 0;
+    right: 0;
+  }
+  100%   {
+    left: 100%;
+    right: 0;
+  }
 }
 
 /* --- ローディング中にbodyに付与されるクラス --- */
