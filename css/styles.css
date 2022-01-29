@@ -1661,7 +1661,7 @@ select::-ms-expand {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(115deg, #f0f0f0 0%, #f0f0f0 59.1%, #ffffff 59.1%, #ffffff 90.3%, #f0f0f0 92%, #f0f0f0 100%);
+  background: linear-gradient(115deg, #f0f0f0 0%, #f0f0f0 59.1%, #ffffff 59.1%, #ffffff 90.3%, #f0f0f0 90.3%, #f0f0f0 100%);
   z-index: -1;
 }
 @media screen and (min-width: 768px) {
