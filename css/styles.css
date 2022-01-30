@@ -1537,6 +1537,7 @@ select::-ms-expand {
 }
 
 .p-header__logo {
+  display: block;
   margin-right: 20px;
   margin-right: 1.25rem;
   z-index: 300;
@@ -1896,7 +1897,7 @@ select::-ms-expand {
   }
 }
 
-.p-top-mv__sub-text h3 {
+.p-top-mv__sub-text h2 {
   display: inline-block;
   padding: 9px 15px;
   padding: 0.5625rem 0.9375rem;
@@ -1905,7 +1906,7 @@ select::-ms-expand {
           transform: skewX(27deg);
 }
 @media screen and (min-width: 768px) {
-  .p-top-mv__sub-text h3 {
+  .p-top-mv__sub-text h2 {
     padding: 1.0625rem 1.6875rem;
     -webkit-transform: skewX(38deg);
             transform: skewX(38deg);

@@ -10,6 +10,7 @@
 }
 
 .p-header__logo {
+  display: block;
   margin-right: rem(20);
   z-index: $header-logo_z-index;
 }
